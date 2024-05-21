@@ -1,0 +1,90 @@
+*,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Top Bar css  */
+.topbar {
+  background-color: #12062c;
+  color: aliceblue;
+  font-size: 0.8rem;
+}
+
+.icon-purple {
+  color: blueviolet;
+}
+
+/* Navbar css  */
+.cfl-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cfl-nav-logo img {
+  width: 80px;
+}
+
+.cfl-nav-menu ul {
+  display: flex;
+}
+
+.cfl-nav-menu ul li {
+  list-style: none;
+  margin: 12px;
+  padding: 10px 15px;
+}
+.cfl-nav-menu ul li a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.cfl-nav-menu ul li:hover a {
+  color: #000;
+  font-weight: 700;
+  transition: all ease-in;
+}
+
+.search-icon {
+  font-size: 1.9rem;
+}
+.search-icon i {
+  margin-left: 10px;
+  padding: 15px 20px;
+  border-left: 1px solid #adadad;
+}
+
+.call-anytime-btn {
+  padding: 10px 30px;
+  background: rgb(171, 43, 230);
+  background: linear-gradient(
+    23deg,
+    rgba(171, 43, 230, 1) 0%,
+    rgba(101, 34, 182, 1) 100%
+  );
+}
+
+.call-btn-icon i {
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: rgb(171, 43, 230);
+  margin-right: 5px;
+}
+
+.cfl-number {
+  color: #350e68;
+}
+
+.cfl-number p {
+  font-weight: 600;
+}
+
+.cfl-number span {
+  font-size: 0.92rem;
+}
