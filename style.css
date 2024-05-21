@@ -8,7 +8,8 @@ p {
 body {
   font-family: "Roboto", sans-serif;
 }
-/* Top Bar css  */
+
+/* Top Bar css */
 .topbar {
   background-color: #12062c;
   color: aliceblue;
@@ -19,11 +20,12 @@ body {
   color: blueviolet;
 }
 
-/* Navbar css  */
+/* Navbar css */
 .cfl-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .cfl-nav-logo img {
@@ -39,10 +41,12 @@ body {
   margin: 12px;
   padding: 10px 15px;
 }
+
 .cfl-nav-menu ul li a {
   text-decoration: none;
   color: #4d4d4d;
 }
+
 .cfl-nav-menu ul li:hover a {
   color: #000;
   font-weight: 700;
@@ -52,6 +56,7 @@ body {
 .search-icon {
   font-size: 1.9rem;
 }
+
 .search-icon i {
   margin-left: 10px;
   padding: 15px 20px;
@@ -87,4 +92,59 @@ body {
 
 .cfl-number span {
   font-size: 0.92rem;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .cfl-nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .cfl-nav-menu ul {
+    flex-direction: column;
+  }
+
+  .cfl-nav-menu ul li {
+    margin: 10px 0;
+  }
+
+  .cfl-nav-menu.nav-active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.toggle .line2 {
+    opacity: 0;
+  }
+
+  .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
