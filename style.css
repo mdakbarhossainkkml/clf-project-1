@@ -160,5 +160,23 @@ body {
 }
 
 .hero-content{
-  padding: 50px 10px;
+  padding: 250px 10px;
+  color: aliceblue;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p{
+  font-size: 2rem;
+  max-width: 600px;
+}
+
+.hero-content button{
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  background-color: #5811ca;
 }
