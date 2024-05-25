@@ -6,4 +6,4 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
 });
 
-console.log("first");
+// console.log("first");

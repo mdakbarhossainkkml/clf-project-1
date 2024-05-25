@@ -5,6 +5,49 @@ p {
   box-sizing: border-box;
 }
 
+
+/* Responsive headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.25em 0;
+}
+
+/* Default heading sizes */
+h1 {
+  font-size: 2.5rem;
+  /* 40px */
+}
+
+h2 {
+  font-size: 2rem;
+  /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem;
+  /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem;
+  /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem;
+  /* 20px */
+}
+
+h6 {
+  font-size: 1rem;
+  /* 16px */
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -66,11 +109,9 @@ body {
 .call-anytime-btn {
   padding: 10px 30px;
   background: rgb(171, 43, 230);
-  background: linear-gradient(
-    23deg,
-    rgba(171, 43, 230, 1) 0%,
-    rgba(101, 34, 182, 1) 100%
-  );
+  background: linear-gradient(23deg,
+      rgba(171, 43, 230, 1) 0%,
+      rgba(101, 34, 182, 1) 100%);
 }
 
 .call-btn-icon i {
@@ -106,6 +147,7 @@ body {
   margin: 5px;
   transition: all 0.3s ease;
 }
+
 
 @media (max-width: 768px) {
   .cfl-nav-menu {
@@ -147,6 +189,10 @@ body {
   .burger.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
+  .d-none {
+    display: none;
+  }
 }
 
 /* Hero Section  */
@@ -154,12 +200,14 @@ body {
   width: 100%;
   height: 100%;
   background-image: url(./image/hero-slider.png);
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image in the container */
-  background-repeat: no-repeat; /
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image in the container */
+  background-repeat: no-repeat;/
 }
 
-.hero-content{
+.hero-content {
   padding: 250px 10px;
   color: aliceblue;
 }
@@ -169,14 +217,340 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-content p{
+.hero-content p {
   font-size: 2rem;
   max-width: 600px;
 }
 
-.hero-content button{
+.hero-content button {
   color: white;
   border: none;
   padding: 15px 40px;
   background-color: #5811ca;
+}
+
+/* About Section  */
+.about-description span {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-description h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-description p {
+  color: #939393;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+.headset-icon i {
+  font-size: 3rem;
+}
+
+.consultant {
+  background-color: #e0f5ff;
+  padding: 25px 30px;
+  margin: 10px;
+}
+
+.consultant-info h6 {
+  font-size: 1.7rem;
+  color: #5811ca;
+  line-height: 0.9rem;
+}
+
+.consultant-info p {
+  font-size: 1.1rem;
+  letter-spacing: 0.08rem;
+}
+
+.founder-info h6 {
+  font-size: 1.4rem;
+}
+
+.founder-info p {
+  font-size: 1rem;
+  color: #5811ca;
+  font-weight: 600;
+}
+
+
+.learn-more-btn button {
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  background-color: #5811ca;
+}
+
+.popular-service-section {
+  background-color: #f8f4ff;
+}
+
+
+/* Base styles for the grid container and cards */
+.popular-service-card-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.popular-service-card {
+  background-color: #f8f9fa;
+  /* border: 1px solid #dee2e6; */
+  /* border-radius: 8px; */
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Post    */
+.blog-post-card {
+  transition: 0.25s ease-in;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post-badge {
+  padding: 4px 10px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.blog-post-card-read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  color: blueviolet;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blog-post-card-read-more-btn i {
+  margin-left: 8px;
+  color: blueviolet;
+}
+
+.register-btn {
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 500;
+  background-color: #5811ca;
+}
+
+
+/* footer section  */
+.footer-section {
+  background-image: url("./image/footer-bg.png");
+  background-size: cover;
+  /* Ensures the background image covers the entire area */
+  background-position: center;
+  /* Centers the background image */
+  background-repeat: no-repeat;
+  /* Prevents the background image from repeating */
+  background-attachment: fixed;
+  /* Makes the background image fixed when scrolling */
+  padding: 80px 0;
+  /* Optional: Adds some padding to the top and bottom of the footer section */
+  color: #fff;
+  /* Optional: Sets the text color to white for better readability */
+}
+
+
+.footer-social-icon i {
+  border: 1px solid blueviolet;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.styled-heading {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.styled-heading::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: -5px;
+  /* Adjust this value to position the border lower if needed */
+  left: 25%;
+  transform: translateX(-50%);
+  transition: width 0.4s ease-in-out;
+  /* Animation for the width */
+}
+
+.styled-heading:hover::after {
+  width: 100%;
+  left: 50%;
+}
+
+
+.footer-bottom {
+  background-color: #13003d;
+  color: snow;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+    /* 56px */
+  }
+
+  h2 {
+    font-size: 3rem;
+    /* 48px */
+  }
+
+  h3 {
+    font-size: 2.75rem;
+    /* 44px */
+  }
+
+  h4 {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  h5 {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+
+  h6 {
+    font-size: 2rem;
+    /* 32px */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+    /* 64px */
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    /* 56px */
+  }
+
+  h3 {
+    font-size: 3rem;
+    /* 48px */
+  }
+
+  h4 {
+    font-size: 2.75rem;
+    /* 44px */
+  }
+
+  h5 {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  h6 {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .hero-content {
+    padding: 50px 10px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .hero-content button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5811ca;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .popular-service-card-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .blog-post-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .popular-service-card-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .blog-post-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .popular-service-card-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .blog-post-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
