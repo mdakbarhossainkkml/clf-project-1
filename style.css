@@ -424,6 +424,12 @@ body {
   color: snow;
 }
 
+/* 
+.swiper {
+  width: 600px;
+  height: 300px;
+} */
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
